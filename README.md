@@ -1,4 +1,4 @@
 # ServerStatus-Jasmine
 
 
-暂未测试
+项目未完善，暂未测试
