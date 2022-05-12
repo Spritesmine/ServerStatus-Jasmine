@@ -1,0 +1,24 @@
+{"servers":
+	[
+		{
+			"username": "s01",
+			"password": "password",
+			"name": "Mainserver 1",
+			"type": "Dedicated Server",
+			"host": "No",
+			"location": "America",
+			"disabled": false,
+			"region":"US"
+		},
+		{
+			"username": "bs01",
+			"password": "password",
+			"name": "Backupserver 1",
+			"type": "Virtual Server",
+			"host": "No",
+			"location": "Japan",
+			"disabled": false,
+			"region":"JP"
+		}
+	]
+}
