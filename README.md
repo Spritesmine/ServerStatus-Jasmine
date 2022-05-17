@@ -22,7 +22,7 @@ Python 客户端：支持 Python 版本：Python 2.7 +
 
 ## 安装方法
 
-服务端：
+### 服务端：
 
 ```bash
 wget https://raw.githubusercontent.com/Spritesmine/ServerStatus-Jasmine/master/status.sh
@@ -30,8 +30,33 @@ wget https://raw.githubusercontent.com/Spritesmine/ServerStatus-Jasmine/master/s
 bash status.sh s
 ```
 
-客户端：
+1、选择1，配置服务端
+
+2、没什么需求的话，端口建议默认就好
+
+3、如果本地没装别的如Nginx或者Apache之类的，直接Y就好
+
+4、绑定域名或IP访问
+
+5、端口自主选择
+
+6、添加客户端：选择7后选1
+
+剩下的信息自己填就好了
+
+7、删除（修改）服务端：选7后在选择
+
+
+### 客户端：
 
 ```
 bash status.sh c
 ```
+
+
+后选1然后按照服务端填写的即可
+
+## 修改方法
+
+配置文件：/usr/local/ServerStatus/server/config.json备份并可自行添加Region
+
