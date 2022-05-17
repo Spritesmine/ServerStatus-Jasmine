@@ -129,3 +129,16 @@ Pirate flag: `pirate`
 
 替换配置文件，重启 ServerStatus
 
+## 相关开源项目 ： 
+* ServerStatus-Toyo：https://github.com/ToyoDAdoubiBackup/ServerStatus-Toyo MIT License
+* ServerStatus：https://github.com/BotoX/ServerStatus WTFPL License
+* ServerStatus-Hotaru：https://github.com/cokemine/ServerStatus-Hotaru WTFPL License
+* mojeda's ServerStatus: https://github.com/mojeda/ServerStatus WTFPL License -> GNU GPLv3 License (ServerStatus is a full rewrite of mojeda's ServerStatus script and not affected by GPL)
+* BlueVM's project: http://www.lowendtalk.com/discussion/comment/169690#Comment_169690 WTFPL License
+
+## 感谢
+
+* i18n-iso-countries: https://github.com/michaelwittig/node-i18n-iso-countries MIT License (To convert country name in Chinese to iso 3166-1 and check if the code is valid)
+* jq: https://github.com/stedolan/jq CC BY 3.0 License
+* caddy: https://github.com/caddyserver/caddy Apache-2.0 License
+* twemoji: https://github.com/twitter/twemoji CC-BY 4.0 License (The flag icons are designed by Twitter)
