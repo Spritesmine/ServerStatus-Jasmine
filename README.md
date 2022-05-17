@@ -35,6 +35,30 @@ Python 客户端：支持 Python 版本：Python 2.7 +
 * server/config.json	探针配置文件                                
 * web/json      	探针月流量 
 
+## 其他说明
+
+ServerStatus-Jasmine 也许会停留在现在的 ServerStatus，有可能不会再添加新的功能，看后续情况吧~~~
+
+如果你有以下需求：
+
+1、更低的 IO 占用
+
+2、Websocket 支持
+
+3、Docker 支持（已支持，但没有完全支持，但比较麻烦，不推荐新手使用）
+
+4、更方便服务器的顺序调整
+
+5、客户端掉线 Telegram Bot 通知 （已支持，但比较麻烦，不推荐新手使用）
+
+6、使用 Web 管理、添加、修改客户端信息
+
+7、等等
+
+也欢迎使用cokemine大佬的 NodeStatus: https://github.com/cokemine/nodestatus （请到 beta 版再实际使用）
+
+ServerStatus-Jasmine 仍在继续维护，有新功能有时间可以添加，有问题请反馈哦，有时间会修复哦~~~
+
 ## 安装方法
 
 ### docker-compose （telegram机器人提醒功能需要使用docker，不推荐新手使用）
