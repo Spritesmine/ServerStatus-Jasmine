@@ -1,5 +1,10 @@
 # ServerStatus-Jasmine
 
+[![Python Support](https://img.shields.io/badge/python-2.7%2B%20-blue.svg)](https://github.com/Spritesmine/ServerStatus-Jasmine)
+[![C++ Compiler](http://img.shields.io/badge/C++-GNU-blue.svg?style=flat&logo=cplusplus)](https://github.com/Spritesmine/ServerStatus-Jasmine)
+[![License](https://img.shields.io/badge/license-MIT-4EB1BA.svg?style=flat-square)](https://github.com/Spritesmine/ServerStatus-Jasmine)
+[![Version](https://img.shields.io/badge/Version-Beta%202.2.0-red)](https://github.com/Spritesmine/ServerStatus-Jasmine)
+
 项目暂未完善，暂未测试，耐心等待，大佬可自行测试
 
 云探针、多服务器探针、云监控、多服务器云监控
@@ -19,6 +24,14 @@ Python 客户端：支持 Python 版本：Python 2.7 +
 前端所使用一些调用见前端仓库的声明。
 
 前端开源地址：https://github.com/Spritesmine/Jasmine-Theme
+
+# 目录介绍：
+
+* clients       	客户端文件
+* server       	 	服务端文件  
+* web           	网站文件
+* server/config.json	探针配置文件                                
+* web/json      	探针月流量 
 
 ## 安装方法
 
@@ -58,5 +71,6 @@ bash status.sh c
 
 ## 修改方法
 
-配置文件：/usr/local/ServerStatus/server/config.json备份并可自行添加Region
+配置文件：/usr/local/ServerStatus/server/config.json备份并可自行添加里面部分内容与Region（仅限爱捣鼓或高手修改）
 
+![](https://raw.githubusercontent.com/Spritesmine/Jasmine-Theme/master/Jasmine-Theme/Jasmine-Theme%20(9).png)
