@@ -81,8 +81,6 @@ ServerStatus-Jasmine 也许会停留在现在的 ServerStatus，有可能不会�
 
 7、等等
 
-也欢迎使用cokemine大佬的 NodeStatus: https://github.com/cokemine/nodestatus （请到 beta 版再实际使用）
-
 ServerStatus-Jasmine 仍在继续维护，有新功能有时间可以添加，有问题请反馈哦，有时间会修复哦~~~
 
 ## 安装方法
