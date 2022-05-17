@@ -11,6 +11,8 @@
 
 基于 ServerStatus-Toyo 与 ServerStatus-Hotaru 的版本修改。
 
+![](https://raw.githubusercontent.com/Spritesmine/Jasmine-Theme/master/Jasmine-Theme/Jasmine-Theme%20(1).jpg)
+
 ## 特性
 
 服务端客户端脚本支持系统：Centos 7、Debian 8、Ubuntu 15.10 及以上、ArchLinux 等...
@@ -34,6 +36,12 @@ Python 客户端：支持 Python 版本：Python 2.7 +
 * web/json      	探针月流量 
 
 ## 安装方法
+
+### docker-compose （telegram机器人提醒功能需要使用docker，不推荐新手使用）
+
+只提供安装代码，其他请自行搜索，不推荐新手，但爱捣鼓可以试一试
+
+`curl -sSL https://get.docker.com/ | sh && apt -y install docker-compose` 
 
 ### 服务端：
 
