@@ -107,3 +107,25 @@ Transgender flag: `trans`
 Rainbow flag: `rainbow`
 
 Pirate flag: `pirate`
+
+## Toyo版本修改方法
+
+如果你使用 Toyo 版本或其他版本的 ServerStatus，请备份你的config文件并重新编译安装本版本服务端
+
+配置文件: /usr/local/ServerStatus/server/config.json 备份并自行添加`region`
+
+```json
+{
+   "username": "Name",
+   "password": "Password",
+   "name": "Your Servername",
+   "type": "KVM",
+   "host": "None",
+   "location": "洛杉矶",
+   "disabled": false,
+   "region": "US"
+},
+```
+
+替换配置文件，重启 ServerStatus
+
