@@ -39,7 +39,7 @@ Python 客户端：支持 Python 版本：Python 2.7 +
 
 ### docker-compose （telegram机器人提醒功能需要使用docker，不推荐新手使用）
 
-只提供安装代码，其他请自行搜索，不推荐新手，但爱捣鼓可以试一试
+只提供安装代码，其他请自行搜索，不推荐新手，但爱捣鼓可以试一试，自行研究
 
 `curl -sSL https://get.docker.com/ | sh && apt -y install docker-compose` 
 
@@ -82,3 +82,28 @@ bash status.sh c
 配置文件：/usr/local/ServerStatus/server/config.json备份并可自行添加里面部分内容与Region（仅限爱捣鼓或高手修改）
 
 ![](https://raw.githubusercontent.com/Spritesmine/Jasmine-Theme/master/Jasmine-Theme/Jasmine-Theme%20(9).png)
+
+## 更新前端
+
+默认服务端更新不会更新前端。因为更新前端会导致自己自定义的前端消失。
+
+```bash
+rm -rf /usr/local/ServerStatus/web/*
+wget https://github.com/Spritesmine/Jasmine-Theme/releases/latest/download/Jasmine-theme.zip
+unzip Jasmine-Theme.zip
+mv ./hotaru-theme/* /usr/local/ServerStatus/web/
+service status-server restart
+# systemctl restart status-server
+```
+
+## 关于前端旗帜图标
+
+目前通过脚本使用旗帜图标仅支援当前国家/地区在 ISO 3166-1 标准里，否则可能会出现无法添加的情况，如欧盟 `EU`，但是前端是具备该旗帜的。你可能需要手动加入。方法是修改`/usr/local/ServerStatus/server/config.json`，将你想修改的服务器的`region`改成你需要的。
+
+同时，前端还具备以下特殊旗帜，可供选择使用，启用也是需要上述修改。
+
+Transgender flag: `trans`
+
+Rainbow flag: `rainbow`
+
+Pirate flag: `pirate`
