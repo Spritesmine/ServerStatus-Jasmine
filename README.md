@@ -85,13 +85,56 @@ bash status.sh c
 
 ![Shell View](http://dl.cpp.la/Archive/serverstatus-shell.png)
 
-## 修改方法
+## 手动安装服务端
+
+```bash
+mkdir -p /usr/local/ServerStatus/server
+apt install wget unzip curl vim build-essential
+cd /tmp
+wget https://github.com/Spritesmine/ServerStatus-Jasmine/archive/master.zip
+unzip master.zip
+cd ./ServerStatus-Jasmine-master/server
+make #编译生成二进制文件
+chmod +x sergate
+mv sergate /usr/local/ServerStatus/server
+vim /usr/local/ServerStatus/server/config.json #修改配置文件
+#下载前端
+cd /tmp && wget https://github.com/Spritesmine/Jasmine-Theme/releases/latest/download/Jasmine-Theme.zip
+unzip Jasmine-Theme.zip
+mv ./Jasmine-Theme /usr/local/ServerStatus/web #此为站点根目录，请自行设置
+nohup ./sergate --config=config.json --web-dir=/usr/local/ServerStatus/web --port=35601 > /tmp/serverstatus_server.log 2>&1 & #默认端口35601
+```
+
+### 手动安装客户端
+
+使用 Psutil 版客户端即可使 ServerStatus 客户端在 Windows 等其他平台运行
+
+```powershell
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py # 若未安装pip
+python get-pip.py
+python pip install psutil
+# 修改 status-psutil.py
+python status-psutil.py
+```
+
+Linux 版客户端支持绝大部分 Linux 发行版系统，一般不需要使用 psutil 版客户端。
+
+```bash
+apt install python3 python3-pip wget
+pip3 install psutil
+wget https://raw.githubusercontent.com/Spritesmine/ServerStatus-Jasmine/master/clients/status-psutil.py
+vim status-psutil.py #修改客户端配置文件
+python3 status-psutil.py
+# https://raw.githubusercontent.com/Spritesmine/ServerStatus-Jasmine/master/clients/status-client.py 默认版本无需 psutil 依赖
+```
+
+### 修改方法
 
 配置文件：/usr/local/ServerStatus/server/config.json备份并可自行添加里面部分内容与Region（仅限爱捣鼓或高手修改）
 
 ![](https://raw.githubusercontent.com/Spritesmine/Jasmine-Theme/master/Jasmine-Theme/Jasmine-Theme%20(9).png)
 
-## 更新前端
+### 更新前端
 
 默认服务端更新不会更新前端。因为更新前端会导致自己自定义的前端消失。
 
