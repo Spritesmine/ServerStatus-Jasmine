@@ -27,7 +27,7 @@ Python 客户端：支持 Python 版本：Python 2.7 +
 
 前端开源地址：https://github.com/Spritesmine/Jasmine-Theme
 
-# 目录介绍：
+## 目录介绍：
 
 * clients       	客户端文件
 * server       	 	服务端文件  
@@ -76,6 +76,14 @@ bash status.sh c
 
 
 后选1然后按照服务端填写的即可
+
+### 防止受到CC attack时候方便查看机器状态
+
+打开云探针页面，就可以正常的监控。接下来把服务器和客户端脚本自行加入开机启动，或者进程守护，或以后台方式运行即可！例如： nohup python3 client-linux.py &  
+
+`extra scene (run web/ssview.py)`
+
+![Shell View](http://dl.cpp.la/Archive/serverstatus-shell.png)
 
 ## 修改方法
 
