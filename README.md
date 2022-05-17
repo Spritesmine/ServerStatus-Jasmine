@@ -85,7 +85,7 @@ bash status.sh c
 
 ![Shell View](http://dl.cpp.la/Archive/serverstatus-shell.png)
 
-## 手动安装服务端
+## 手动安装服务端（不推荐，有可能会发生未知问题）
 
 ```bash
 mkdir -p /usr/local/ServerStatus/server
@@ -105,7 +105,7 @@ mv ./Jasmine-Theme /usr/local/ServerStatus/web #此为站点根目录，请自�
 nohup ./sergate --config=config.json --web-dir=/usr/local/ServerStatus/web --port=35601 > /tmp/serverstatus_server.log 2>&1 & #默认端口35601
 ```
 
-### 手动安装客户端
+### 手动安装客户端（不推荐，有可能会发生未知问题）
 
 使用 Psutil 版客户端即可使 ServerStatus 客户端在 Windows 等其他平台运行
 
@@ -179,6 +179,12 @@ Pirate flag: `pirate`
 ```
 
 替换配置文件，重启 ServerStatus
+
+## 演示
+
+![](https://raw.githubusercontent.com/Spritesmine/Jasmine-Theme/master/Jasmine-Theme/Jasmine-Theme%20(2).jpg)
+
+详细演示请移步前端库查看：https://github.com/Spritesmine/Jasmine-Theme
 
 ## 相关开源项目 ： 
 * ServerStatus-Toyo：https://github.com/ToyoDAdoubiBackup/ServerStatus-Toyo MIT License
