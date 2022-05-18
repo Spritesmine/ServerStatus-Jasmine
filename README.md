@@ -94,8 +94,14 @@ ServerStatus-Jasmine 仍在继续维护，有新功能有时间可以添加，�
 ### 服务端：
 
 ```bash
+# （GitHub代理 默认部署地址）由于国外公开库在国外，默认推荐运行，如无法获取到仓库，请使用以下方式安装
 wget https://raw.githubusercontent.com/Spritesmine/ServerStatus-Jasmine/master/status.sh
-# wget https://qisansui.coding.net/p/agony/d/ServerStatus-Jasmine/git/raw/master/status.sh 若服务器位于中国大陆建议选择Coding.net仓库
+# （Coding加速代理 国内代理）若服务器位于中国大陆建议选择Coding.net仓库
+# wget https://qisansui.coding.net/p/agony/d/ServerStatus-Jasmine/git/raw/master/status.sh 
+# （jsdelivr加速代理 方式一）由jsdelivr代理cdn加速部署仓库（由于国外公司全球cdn代理加速，有几率加速国内失效或速度慢情况）
+# wget https://cdn.jsdelivr.net/gh/Spritesmine/ServerStatus-Jasmine/status.sh 
+# （jsdelivr加速代理 方式二）由jsdelivr代理cdn高速部署仓库（由于国外公司全球cdn代理加速，有几率加速国内失效或速度慢情况）
+# wget https://fastly.jsdelivr.net/gh/Spritesmine/ServerStatus-Jasmine/status.sh 
 bash status.sh s
 ```
 
