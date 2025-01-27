@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-4EB1BA.svg?style=flat-square)](https://github.com/Spritesmine/ServerStatus-Jasmine)
 [![Version](https://img.shields.io/badge/Version-Beta%202.2.0-red)](https://github.com/Spritesmine/ServerStatus-Jasmine)
 
-项目暂未完善，暂未测试，耐心等待，大佬可自行测试
+因学业问题，项目暂未完善，暂未测试，耐心等待，大佬可自行测试
 
 云探针、多服务器探针、云监控、多服务器云监控
 
